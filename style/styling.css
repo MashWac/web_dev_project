@@ -1,0 +1,474 @@
+html{
+    height: 100%;
+}
+body{
+    margin: 0;
+    font-weight: 400;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+#userpanel{
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    position: absolute;
+    display:ruby-base;
+    padding-right: 20px;
+}
+.dropdownoptions{
+    padding: 10px;
+    padding-top: 30px;
+    display:inline-block;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    visibility: hidden;
+    position: relative;
+}
+.dropdownoptions::before{
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    background: white;
+    transform: rotate(45deg);
+}
+.dropdownoptions.active{
+    padding: 10px;
+    padding-top: 30px;
+    display:inline-block;
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 1rem;
+    visibility: visible;
+    position: relative;
+}
+
+
+#uname{
+    padding-bottom: 15px;
+}
+.uoption{
+    text-decoration: none;
+    color: rgb(68, 68, 68);
+}
+.uoption:hover{
+    color: rgb(114, 240, 223);
+}
+#displayuserdetails{
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;    font-style: italic;
+}
+#cartdetails{
+    text-align: center;
+    font-size: 14px;
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+}
+#cartCount{
+    text-align: center;
+    padding: 0 0.9rem 0.1rem 0.9rem;
+    border-radius: 3rem;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: white;
+    font-style: normal;
+    color: black;
+
+}
+.container{
+    width: 100%;
+    margin: 0, auto;
+}
+header{
+    background: #ffd4d7;
+}
+#announcement{
+    background:ghostwhite;
+    height: 50px;
+    max-width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+#announcement ul{
+    float: right;
+    margin:0;
+    padding: 0;
+    padding-top: 10px;
+    list-style: none;
+
+}
+#anouncement li{
+    display: flex;
+    margin: 0px;
+    padding-top: 25px;
+    font-size: 14px;
+}
+#announcement a{
+    color: rgb(114, 114, 114);
+    text-decoration: none;    
+}
+#announcement a:hover{
+    color: teal;
+}
+#announce{
+    float: left;
+    height: 40px;
+    padding-top: 10px;
+    text-align: right;
+}
+#loginlink{
+    float: right;
+    height: 40px;
+    width: 200px;
+    text-align: left;
+}
+
+header::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.logo{
+    float: left;
+
+}
+
+nav{
+width: 100%;
+}
+nav ul{
+    margin:0;
+    padding: 0;
+    padding-top: 24px;
+    list-style: none;
+}
+nav li{
+    display: inline;
+    margin: 30px;
+    padding-top: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;    
+}
+nav a:hover{
+    color: teal;
+}
+#mainbody{
+    min-height: 100%;
+}
+#headline{
+    background-image: url(backgroundheadline.jpg);
+    padding: 150px;
+    background-size: cover;
+    
+}
+#headlinehead{
+    padding-left: 1%;
+    padding-right: 70%;
+    color: rgb(37, 36, 36);
+}
+#headlinebody{
+    padding-left: 1%;
+    padding-right: 60%;
+    color: rgb(37, 36, 36);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bestsellersheader{
+    background:rgb(112, 233, 227);
+    padding-top: 5px;
+    padding-bottom:5px;
+    
+}
+#bestsellersheader>h1{
+    font-family: 'Courier New', Courier, monospace; 
+    color:rgb(0, 0, 0);
+    text-align: center;
+    
+
+
+}
+#productdetails{
+    width: 1000px;
+    height: 450px;
+    margin: auto;
+    padding: 20px;
+}
+.productdivs{
+    width: 330px;
+    float: left;
+    height: 375px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#certification{
+    background-image: url(certification.png);
+    height: 150px;
+    padding-left: 13%;
+    padding-right: 5%;
+    background-size: cover;
+}
+#companydetails{
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+#qualityservices{
+    width: 1000px;
+    height: 420px;
+    padding: 20px;
+    padding-top: 40px;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+#section1{
+    float: left;
+    text-align: right;
+    padding-top: 100px;
+}
+#imagepart1{
+    float: left;
+}
+#delivery{
+    width: 1000px;
+    height: 420px;
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+#imagepart2{
+    float: left;
+}
+#section2{
+    float: left;
+    padding-top: 100px;
+    text-align: left;
+}
+.imagepart{
+    width: 410px;
+    height: 410px;
+
+}
+.textpart{
+    width: 50%;
+
+}
+#footer{
+    position: sticky;
+    top: 100%;
+    color: snow;
+    height: 350px;
+    margin-top: auto;
+    padding-top: 30px;
+}
+#footercontent{
+    background: skyblue;
+    padding-top: 20px;
+    border:2px rgb(131, 30, 12);
+    height: 300px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#footer-bottom{
+    padding-top:20px ;
+    background: rgb(132, 224, 240);
+    color: whitesmoke;
+    height: 50px;
+    width: 100%;
+    text-align: center; 
+}
+#Regcontent{
+    max-width: 100%;
+    height: 600px;
+    width: 1000px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 20px;
+    margin: auto;
+}
+#formbody{
+    max-width: 500px;
+    border: none;
+    float: left;
+}
+#formbody>h3{
+    color: rgb(112, 233, 227);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+#formbody>form{
+    width: 100%;
+}
+.inputfield{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+}
+.inputfield label{
+    width: 200px;
+    color: 757575;
+    margin-right: 10px;
+    font-size: 14px;
+
+}.inputfield input{
+    width: 100%;
+    outline: none;
+    border: 1px solid;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.inputfield2{
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+
+}
+.inputfield2 label{
+    width: 200px;
+    color: 757575;
+    font-size: 14px;
+
+}.inputfield2 input{
+    width: 100%;
+    outline: none;
+    border: 1px solid;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+.button{
+    
+    background-color:rgb(112, 233, 227);
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    outline: none;
+    border: rgb(194, 194, 194);
+    border-radius: 3px;
+}
+.button:hover{
+    background-color: rgb(15, 194, 194);
+}
+#alreadymember{
+    max-width: 500px;
+    width: 100%;
+    float: left;
+    padding-top: 200px;
+    text-align: center;
+}
+#alreadymember>h2{
+    color: rgb(113, 138, 136);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+#Logincontent{
+    height: 400px;
+    padding-bottom: 20px;
+    padding-left: 35%;
+}
+#loginformbody{
+    max-width: 500px;
+    
+    border: none;
+}
+#loginformbody>h3{
+    color: rgb(112, 233, 227);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+#aboutuscontent{
+    padding: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5%;
+}
+#aboutuscontent>h1{
+    color: rgb(112, 233, 227);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+#moneybackguaranteecontent{
+    padding: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5%;
+}
+#moneybackguaranteecontent>h1{
+    color: rgb(112, 233, 227);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+#shippinganddeliverycontent{
+    padding: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-top: 5%;
+}
+#shippinganddeliverycontent>h1{
+    color: rgb(112, 233, 227);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+span{
+    font-style: italic;
+    font-weight: bold;
+}
+.prods{
+    float: left;
+    width: 330px;
+    height: 450px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding:25px;
+}
+.productlist{
+    width: 1200px;
+    margin: auto;
+    padding-bottom: 50px;
+    text-transform: capitalize;
+}
+#prodtitle{
+    color: rgb(112, 233, 227);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+section>h1,h2{
+    color: rgb(112, 233, 227);
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+section{
+    width: 70%;
+    
+}
+
+.ion-icon{
+    color: seashell;
+    padding: .5rem;
+}
+.ion-icon[name="remove"]{
+    display: none;
+}
+
+
